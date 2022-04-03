@@ -99,18 +99,70 @@ html {
     transform: translateX(4%);
 }
 /* ___________________Search________________________ */
-.header__form {
-    margin: 0 auto;
+.main {
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 540px;
+    height: 60px;
 }
-/* __________________Footer________________ */
-.footer {
-    
-    width: 95%;
-    margin: 30px auto 0 auto;
-    display: grid;
-    grid-template-columns: 30% 1fr;
+/* ___________________________ */
+.main .search_main {
+    width: auto;
+    display: flex;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
 }
+
+.main .search_main:hover  {
+    border-radius: 2px;
+    border: 1px solid #7a7f85;
+}
+.main .search_main:active {
+    border: 2px solid #36c;
+    border-radius: 2px;
+    width: calc(auto- 2px);
+    height: calc(auto - 2px);
+}
+.main .search_main input {
+    width: 341px;
+    height: 46px;
+    padding: 8px 60px 8px 12px ;
+    outline: none;
+    border: none;
+}
+.main .search_main .idioma {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.main .search_main .search_main__list {
+    border: 0;
+}
+.main  .main_search__link {
+    border: 1px solid #a2a9b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #36c;
+    transform: translateX(-1px);
+} 
+.main .main__language .main__language__button {
+    border: 1px solid #a2a9b1;
+    background-color: white;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #36c;
+    padding: 5px 5px;
+    margin-top: 25px;
+}
+
+
 
 /* ____________Aside________________ */
 .aside {
@@ -119,7 +171,6 @@ html {
     display: grid;
     grid-template-columns: minmax(200px, 100%);
     grid-template-rows: repeat(2, auto);
-    padding: 45px 60px;
 
 }
 .section__aside--1 {
@@ -162,42 +213,68 @@ html {
 .aside .section__aside--2 .app-badge {
     
 }
-
+/* __________________Footer________________ */
+.footer {
+    margin-top: 60px;
+    padding-top: 60px;
+    width: 95%;
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template-columns: minmax(200px, 350px) 1fr;
+}
 /* _____________________Footer_MAin_________________________ */
-.footer .main {
+.footer .main2 {
+    padding-left: 25px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: auto;
-    padding: 45px;
     gap: 40px;
 }
-/* ____________Gobal_______________ */
-.footer .main .link__item {
+/* __________Footer__Gobal_______________ */
+.footer .main2 .link__item {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-auto-rows: 1fr;
     text-decoration: none;
 }
-.footer .main .link__item p {
+.footer .main2 .link__item p {
     font-size: 1.4rem;
     color: #36c;
 }
-.footer .main .link__item span {
+.footer .main2 .link__item span {
     font-size: 1.3rem;
     color: #54595d;
 }
-.footer .main .link__item:hover {
+.footer .main2 .link__item:hover {
     background-color: #54595d11;
 }
-.footer .main .section__logo {
+.footer .main2 .section__logo {
     width: 50px;
     height: 47px;
     grid-area: 1/1/3/2;
 }
-/* .footer .main section a span {
-    grid-row: 2;
-    grid-column: 2;
-} */
+/* ___________Footer_bottom__________________ */
+.footer__bottom  {
+    color: #54595d;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.footer__bottom ul {
+    display: flex;
+}
+.footer__bottom li {
+    padding-left: 15px;
+    list-style:none;
+}
+.footer__bottom a {
+    color: #36c;
+    text-decoration: none;
+}
+.footer__bottom a:hover {
+    text-decoration: underline;
+}
 /* _________Icons______________ */
 
 .sprite{background-image:linear-gradient(transparent,transparent),url("https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-e99844f6.svg");background-repeat:no-repeat;display:inline-block;vertical-align:middle}.svg-Commons-logo_sister{background-position:0 0;width:47px;height:47px}.svg-MediaWiki-logo_sister{background-position:0 -47px;width:42px;height:42px}.svg-Meta-Wiki-logo_sister{background-position:0 -89px;width:37px;height:37px}.svg-Wikibooks-logo_sister{background-position:0 -126px;width:37px;height:37px}.svg-Wikidata-logo_sister{background-position:0 -163px;width:49px;height:49px}.svg-Wikimedia-logo_black{background-position:0 -212px;width:42px;height:42px}.svg-Wikipedia_wordmark{background-position:0 -254px;width:176px;height:32px}.svg-Wikiquote-logo_sister{background-position:0 -286px;width:42px;height:42px}.svg-Wikisource-logo_sister{background-position:0 -328px;width:39px;height:39px}.svg-Wikispecies-logo_sister{background-position:0 -367px;width:42px;height:42px}.svg-Wikiversity-logo_sister{background-position:0 -409px;width:43px;height:37px}.svg-Wikivoyage-logo_sister{background-position:0 -446px;width:36px;height:36px}.svg-Wiktionary-logo_sister{background-position:0 -482px;width:37px;height:37px}.svg-arrow-down{background-position:0 -519px;width:12px;height:8px}.svg-arrow-down-blue{background-position:0 -527px;width:14px;height:14px}.svg-badge_google_play_store{background-position:0 -541px;width:124px;height:38px}.svg-badge_ios_app_store{background-position:0 -579px;width:110px;height:38px}.svg-language-icon{background-position:0 -617px;width:22px;height:22px}.svg-noimage{background-position:0 -639px;width:58px;height:58px}.svg-search-icon{background-position:0 -697px;width:22px;height:22px}.svg-wikipedia_app_tile{background-position:0 -719px;width:42px;height:42px}
